@@ -18,7 +18,7 @@ To elaborate,
 
 *   You have to create an app using **React Native** as per the [instructions found here](https://github.com/srm-kzilla/opsap/blob/main/INSTRUCTIONS.md).
 *   You have **24 hours** (measured from the start of this contest) to complete your application.
-*   All you have to do is to **fork this repository** and work on it. Our technical team will consider all the public forks at the end of the contest as submissions.
+*   All you have to do is **fork this repository**, work on the project and push your code to the forked repository in under 24 hours. Our technical team will consider all the public forks at the end of the contest as submissions.
 *   Our technical team will choose the **best three** submissions and they will be up for some cool rewards!
 *   Have any questions? Join our [Discord server](https://discord.gg/NsDYz29).
 
