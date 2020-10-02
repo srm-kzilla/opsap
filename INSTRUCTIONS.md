@@ -2,9 +2,7 @@
   <img alt="SRMKZILLA Logo" src="https://avatars2.githubusercontent.com/u/50284029?s=200&v=4" height="75" />
 </div>
 
-<h2 align="center">OSAP Contest - Intructions</h2>
-
-*Link to the required drive folder: [https://drive.google.com/drive/folders/1YDlmIsUQbGaaREXQvmjJWqwy_KttpLtQ](https://drive.google.com/drive/folders/1YDlmIsUQbGaaREXQvmjJWqwy_KttpLtQ)*
+<h2 align="center">OPSAP Contest - Intructions</h2>
 
 **Suggested Features:**
 
@@ -16,17 +14,16 @@
 *   At the bottom, the home screen should contain tabs, which when tapped upon, redirect to the below-mentioned pages of the App.
 
 *  Pages of the App:
-    1.  **Gallery:** When the users reach this page, they should be able to see a collection of activities & campaigns that the OPSAP has conducted over the past 2 years. Pictures to be used are available in the resource drive-link.
-    2.  **Meet The Team:** When the users reach this page, they should be able to see the names and pictures of all the 26 OnePlus Student Ambassadors. Their pictures and names are available in the resource drive-link.
+    1.  **Gallery:** When the users reach this page, they should be able to see a collection of activities & campaigns that the OPSAP has conducted over the past 2 years. Pictures to be used are available in the `assets` folder.
+    2.  **Meet The Team:** When the users reach this page, they should be able to see the names and pictures of all the 26 OnePlus Student Ambassadors. Their pictures and names are available in the `assets` folder.
     3.  **Event Reel:** When the users reach this page, they should have the following 3 options:  
 
         1.  **Upcoming Events**
         2.  **On-going Events**
         3.  **Past Events**
-        4.  **Collaborate with us:** When the users reach this page, they should come across a form which asks for their essential details & a short description of their collaboration idea. Once submitted, it should display a “Thank you” message.
     4.  **Collaborate with us**: When the users reach this page, they should come across a form which asks for their essential details & a short description of their collaboration idea. Once submitted, it should display a “Thank you” message.
 
- P.S: The details & content for each of these events are available in the resource drive-link
+ P.S: The details & content for each of these events are available in the `assets` folder of this repository
 
 **Bonus Features:**
 
@@ -38,7 +35,7 @@
 
 **<u>Design Guidelines</u>**
 
-1.  Please find all the resources in the **Design folder** of the resource drive link.
-2.  Only the font provided in the resource link should be used for any and every content.
-3.  The logos provided in the resource link should be put up on every page.
-4.  The app should comply with the brand guidelines, the pdf copy of which is available in the design folder of the resource drive link.
+1.  Please find all the resources in the `assets` folder of this repository.
+2.  Only the font provided in the `assets/fonts` folder should be used for any and every content.
+3.  The logos provided in the `assets/logos` folder link should be put up on every page.
+4.  The app should comply with the brand guidelines, the pdf copy of which is available in the `assets/design` folder.
