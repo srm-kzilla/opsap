@@ -3,12 +3,10 @@ import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 import {Text, View} from 'react-native';
-import HomeScreen from './Home'
-
+import HomeScreen from './Home';
+import TeamScreen from './Team';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 const Tab = createBottomTabNavigator();
-
-
 
 function SettingsScreen() {
   return (
@@ -54,7 +52,7 @@ function MyTabs() {
             <AntDesign name="team" color={color} size={size} />
           ),
         }}
-        component={SettingsScreen}
+        component={TeamScreen}
       />
       <Tab.Screen
         name="Event"
