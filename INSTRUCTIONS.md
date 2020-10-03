@@ -14,16 +14,14 @@
 *   At the bottom, the home screen should contain tabs, which when tapped upon, redirect to the below-mentioned pages of the App.
 
 *  Pages of the App:
-    1.  **Gallery:** When the users reach this page, they should be able to see a collection of activities & campaigns that the OPSAP has conducted over the past 2 years. Pictures to be used are available in the `assets` folder.
-    2.  **Meet The Team:** When the users reach this page, they should be able to see the names and pictures of all the 26 OnePlus Student Ambassadors. Their pictures and names are available in the `assets` folder.
-    3.  **Event Reel:** When the users reach this page, they should have the following 3 options:  
+    1.  **Gallery:** When the users reach this page, they should be able to see a collection of activities & campaigns that the OPSAP has conducted over the past 2 years (any placeholder photos can be used for now).
+    2.  **Meet The Team:** When the users reach this page, they should be able to see the names and pictures of all the 26 OnePlus Student Ambassadors. Their pictures and names are available in the `assets/images/team` folder.
+    3.  **Event Reel:** When the users reach this page, they should have the following 3 options: (photos are available in the `assets/images/events` folder)
 
         1.  **Upcoming Events**
         2.  **On-going Events**
         3.  **Past Events**
     4.  **Collaborate with us**: When the users reach this page, they should come across a form which asks for their essential details & a short description of their collaboration idea. Once submitted, it should display a “Thank you” message.
-
- P.S: The details & content for each of these events are available in the `assets` folder of this repository
 
 **Bonus Features:**
 
@@ -32,6 +30,8 @@
 
 2.  Pages of the App:  
     On tapping at the name/image of the Student Ambassador in the “**Meet The Team**” page, the user should be redirected to the given email id: [v-atishay.jain@oneplus.com](mailto:v-atishay.jain@oneplus.com)
+
+3.  A creative splash screen when the application starts.
 
 **<u>Design Guidelines</u>**
 
