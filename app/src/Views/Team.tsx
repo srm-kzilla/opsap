@@ -60,12 +60,13 @@ const styles = StyleSheet.create({
   headCont: {
     textAlign: 'left',
     width: '100%',
-    padding: 10,
   },
   heading: {
     fontSize: 32,
     textAlign: 'left',
     color: '#eb0029',
+    paddingHorizontal: 10,
+    paddingVertical: 3,
   },
   subheading: {
     fontSize: 24,
