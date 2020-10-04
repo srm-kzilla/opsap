@@ -8,6 +8,8 @@ import HomeScreen from './Home';
 import TeamScreen from './Team';
 import EventReel from './EventReel';
 import CollabScreen from './Collab';
+import GalleryScreen from './Gallery';
+
 const Tab = createBottomTabNavigator();
 
 function SettingsScreen() {
@@ -24,6 +26,7 @@ function MyTabs() {
   return (
     <Tab.Navigator
       tabBarOptions={{
+        showLabel: false,
         activeTintColor: '#eb0029',
       }}>
       <Tab.Screen
@@ -42,7 +45,7 @@ function MyTabs() {
             <AntDesign name="picture" color={color} size={size} />
           ),
         }}
-        component={SettingsScreen}
+        component={GalleryScreen}
       />
       <Tab.Screen
         name="Team"
@@ -54,7 +57,7 @@ function MyTabs() {
         component={TeamScreen}
       />
       <Tab.Screen
-        name="Event"
+        name="Events"
         options={{
           tabBarIcon: ({color, size}) => (
             <AntDesign name="calendar" color={color} size={size} />

@@ -14,7 +14,7 @@ const FirstRoute = () => (
     style={[
       styles.scene,
       {
-        backgroundColor: '#fafafa',
+        backgroundColor: '#efefef',
       },
     ]}>
     <Upcoming />

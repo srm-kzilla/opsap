@@ -5,14 +5,13 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  Picker,
   Dimensions,
   Button,
   Image,
   Alert,
 } from 'react-native';
 import Header from '../components/Header';
-
+import {Picker} from '@react-native-community/picker';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
@@ -47,7 +46,7 @@ export default function CollabScreen() {
           ])}>
           <Picker
             selectedValue={gender}
-            style={StyleSheet.flatten([{height: 49, color: "#aaa"}])}
+            style={StyleSheet.flatten([{height: 49, color: '#999'}])}
             onValueChange={(itemValue, itemIndex) => setGender(itemValue)}>
             <Picker.Item label="Male" value="M" />
             <Picker.Item label="Female" value="F" />

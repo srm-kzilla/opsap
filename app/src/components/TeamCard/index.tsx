@@ -31,8 +31,12 @@ const styles = StyleSheet.create({
   container: {
     width: '45%',
     height: 120,
+    marginHorizontal: 5,
     marginTop: 40,
+    marginBottom: 20,
     position: 'relative',
+    borderWidth: StyleSheet.hairlineWidth * 2,
+    borderColor: '#0004',
   },
   content: {
     top: '-30%',
@@ -47,6 +51,7 @@ const styles = StyleSheet.create({
     borderRadius: 200,
     borderWidth: 1,
     borderColor: 'red',
+
     resizeMode: 'cover',
   },
   textCont: {},

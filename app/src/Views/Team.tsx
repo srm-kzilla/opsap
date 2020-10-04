@@ -1,10 +1,22 @@
 import React from 'react';
 import {Text, Linking, StyleSheet, View, ScrollView} from 'react-native';
 import SlideShow from '../components/Slideshow';
+
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import TeamCard from '../components/TeamCard/';
 import Header from '../components/Header';
 
+const shadowOpt = {
+  width: 100,
+  height: 100,
+  color: '#000',
+  border: 2,
+  radius: 3,
+  opacity: 0.2,
+  x: 0,
+  y: 3,
+  style: {marginVertical: 5},
+};
 const TEAM = [
   {
     name: 'Advait Karmakar',
@@ -57,6 +69,7 @@ export default function TeamScreen() {
 
 const styles = StyleSheet.create({
   teamCont: {
+    alignItems: 'center',
     width: '100%',
     justifyContent: 'space-around',
     flexDirection: 'row',

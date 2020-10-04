@@ -7,14 +7,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: [
-        'https://source.unsplash.com/1024x768/?mobile',
-        'https://source.unsplash.com/1024x768/?software',
-        'https://source.unsplash.com/1024x768/?earphones',
-        'https://source.unsplash.com/1024x768/?gaming',
-        'https://source.unsplash.com/1024x768/?tech',
-        // require('./assets/images/girl.jpg'),
-      ],
+      images: props.images,
     };
   }
 
@@ -38,5 +31,5 @@ export default class App extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {height: 200},
+  container: {width: '100%'},
 });
