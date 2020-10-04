@@ -45,6 +45,7 @@
 - Asset performance
 - Tiny bit of inline-styling
 - Form validation
+- Out of the box compatibility with iOS (Linux User :)
 
 ---
 
