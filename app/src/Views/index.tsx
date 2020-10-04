@@ -7,7 +7,7 @@ import {Text, View} from 'react-native';
 import HomeScreen from './Home';
 import TeamScreen from './Team';
 import EventReel from './EventReel';
-
+import CollabScreen from './Collab';
 const Tab = createBottomTabNavigator();
 
 function SettingsScreen() {
@@ -69,7 +69,7 @@ function MyTabs() {
             <AntDesign name="addusergroup" color={color} size={size} />
           ),
         }}
-        component={SettingsScreen}
+        component={CollabScreen}
       />
     </Tab.Navigator>
   );

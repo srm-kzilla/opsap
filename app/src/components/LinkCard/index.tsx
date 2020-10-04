@@ -61,10 +61,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 14,
+    fontFamily: 'NeueHaasDisplay-Roman',
   },
   subTitle: {
     fontSize: 12,
-    color: '#222',
+    color: '#111',
+    fontFamily: 'NeueHaasDisplay-Light',
   },
 });
 

@@ -48,11 +48,13 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   heading: {
+    fontFamily: 'NeueHaasDisplay-Thin',
     fontSize: 32,
     textAlign: 'left',
     color: '#eb0029',
   },
   subheading: {
     fontSize: 24,
+    fontFamily: 'NeueHaasDisplay-Thin',
   },
 });

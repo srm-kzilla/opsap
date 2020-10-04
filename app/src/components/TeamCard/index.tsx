@@ -45,10 +45,17 @@ const styles = StyleSheet.create({
     height: 100,
     width: 100,
     borderRadius: 200,
+    borderWidth: 1,
+    borderColor: 'red',
     resizeMode: 'cover',
   },
   textCont: {},
-  title: {marginTop: 5, fontSize: 20, color: '#222'},
+  title: {
+    marginTop: 5,
+    fontSize: 20,
+    color: '#222',
+    fontFamily: 'NeueHaasDisplay-Roman',
+  },
 });
 
 export default TextCard;

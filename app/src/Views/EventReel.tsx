@@ -5,7 +5,7 @@ import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
 import Upcoming from '../components/Events/Upcoming';
 import OnGoing from '../components/Events/OnGoing';
 import Past from '../components/Events/Past';
-
+import Header from '../components/Header';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
@@ -51,7 +51,6 @@ export default function TabViewExample() {
 
   return (
     <>
-      <Text style={styles.heading}>Events</Text>
       <TabView
         sceneContainerStyle={{backgroundColor: '#000'}}
         renderTabBar={renderTabBar}
@@ -64,25 +63,21 @@ export default function TabViewExample() {
   );
 }
 const renderTabBar = (props) => (
-  <TabBar
-    {...props}
-    renderLabel={({route, focused, color}) => (
-      <Text style={{color: '#000', margin: 8}}>{route.title}</Text>
-    )}
-    indicatorStyle={{backgroundColor: 'red'}}
-    style={{backgroundColor: 'transparent'}}
-  />
+  <>
+    <Header title="Events" />
+    <TabBar
+      {...props}
+      renderLabel={({route, focused, color}) => (
+        <Text style={{color: '#000', margin: 8}}>{route.title}</Text>
+      )}
+      indicatorStyle={{backgroundColor: 'red'}}
+      style={{backgroundColor: 'transparent'}}
+    />
+  </>
 );
 
 const styles = StyleSheet.create({
   scene: {
     flex: 1,
-  },
-  heading: {
-    fontSize: 32,
-    textAlign: 'left',
-    color: '#eb0029',
-    paddingHorizontal: 10,
-    paddingVertical: 3,
   },
 });

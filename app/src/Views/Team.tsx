@@ -3,6 +3,7 @@ import {Text, Linking, StyleSheet, View, ScrollView} from 'react-native';
 import SlideShow from '../components/Slideshow';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import TeamCard from '../components/TeamCard/';
+import Header from '../components/Header';
 
 const TEAM = [
   {
@@ -42,9 +43,7 @@ const TEAM = [
 export default function TeamScreen() {
   return (
     <SafeAreaView style={{flex: 1, alignItems: 'center'}}>
-      <View style={styles.headCont}>
-        <Text style={styles.heading}>Meet the Team</Text>
-      </View>
+      <Header title="Meet the Team" />
       <ScrollView>
         <View style={styles.teamCont}>
           {TEAM.map((elm, idx) => {
@@ -57,26 +56,12 @@ export default function TeamScreen() {
 }
 
 const styles = StyleSheet.create({
-  headCont: {
-    textAlign: 'left',
-    width: '100%',
-  },
-  heading: {
-    fontSize: 32,
-    textAlign: 'left',
-    color: '#eb0029',
-    paddingHorizontal: 10,
-    paddingVertical: 3,
-  },
-  subheading: {
-    fontSize: 24,
-  },
   teamCont: {
     width: '100%',
     justifyContent: 'space-around',
     flexDirection: 'row',
     flexWrap: 'wrap',
-
+    marginTop: '5%',
     flex: 1,
   },
 });
