@@ -18,6 +18,7 @@ export default function OnGoing() {
           width: windowWidth,
           flexDirection: 'column',
           alignItems: 'stretch',
+          backgroundColor: '#fafafa',
         }}>
         {ON_GOING.map((img, idx) => {
           return (

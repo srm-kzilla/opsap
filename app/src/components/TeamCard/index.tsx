@@ -8,7 +8,12 @@ import {
   Linking,
 } from 'react-native';
 
-function TextCard(props) {
+interface ITeamCardProps {
+  image: object;
+  name: string;
+}
+
+function TextCard(props: ITeamCardProps) {
   return (
     <View style={styles.container}>
       <TouchableOpacity
@@ -30,13 +35,13 @@ function TextCard(props) {
 const styles = StyleSheet.create({
   container: {
     width: '45%',
-    height: 120,
+    height: 130,
     marginHorizontal: 5,
     marginTop: 40,
     marginBottom: 20,
     position: 'relative',
-    borderWidth: StyleSheet.hairlineWidth * 2,
-    borderColor: '#0004',
+
+    backgroundColor: '#fafafa',
   },
   content: {
     top: '-30%',
@@ -46,17 +51,15 @@ const styles = StyleSheet.create({
   },
   imageCont: {height: 100},
   image: {
-    height: 100,
-    width: 100,
-    borderRadius: 200,
-    borderWidth: 1,
-    borderColor: 'red',
+    height: 120,
+    width: 120,
+    borderRadius: 10,
 
     resizeMode: 'cover',
   },
   textCont: {},
   title: {
-    marginTop: 5,
+    marginTop: 30,
     fontSize: 20,
     color: '#222',
     fontFamily: 'NeueHaasDisplay-Roman',

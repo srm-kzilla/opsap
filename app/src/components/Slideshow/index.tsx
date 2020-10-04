@@ -1,33 +1,29 @@
-import React, {Component} from 'react';
+// Lib docs demo
+import React, {Component, useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
 import {SliderBox} from 'react-native-image-slider-box';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      images: props.images,
-    };
-  }
+interface ISliderProps {
+  images: object[];
+}
 
-  state = {images: []};
+export default function Slider(props: ISliderProps) {
+  const [images, setImage] = useState(props.images);
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <SliderBox
-          autoplay
-          dotStyle={{
-            display: 'none',
-          }}
-          sliderBoxHeight={200}
-          circleLoop
-          images={this.state.images}
-        />
-      </View>
-    );
-  }
+  return (
+    <View style={styles.container}>
+      <SliderBox
+        autoplay
+        dotStyle={{
+          display: 'none',
+        }}
+        sliderBoxHeight={200}
+        circleLoop
+        images={images}
+      />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({

@@ -8,7 +8,14 @@ import {
   Linking,
 } from 'react-native';
 
-function LinkCard(props) {
+interface ILinkCardProps {
+  url: string;
+  image: object;
+  title: string;
+  subtitle: string;
+}
+
+function LinkCard(props: ILinkCardProps) {
   return (
     <TouchableOpacity onPress={() => Linking.openURL(props.url)}>
       <View style={styles.container}>

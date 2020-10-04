@@ -1,8 +1,9 @@
+// Credits: Lib example : https://snack.expo.io/@saleel/react-native-super-grid
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import {FlatGrid, SectionGrid} from 'react-native-super-grid';
 
-export default function SuperGridExample() {
+export default function SuperGrid() {
   const [items, setItems] = React.useState([
     {name: 'TURQUOISE', code: '#1abc9c'},
     {name: 'EMERALD', code: '#2ecc71'},
@@ -31,8 +32,6 @@ export default function SuperGridExample() {
       itemDimension={130}
       data={items}
       style={styles.gridView}
-      // staticDimension={300}
-      // fixed
       spacing={10}
       renderItem={({item}) => (
         <View style={[styles.itemContainer, {backgroundColor: item.code}]}>
@@ -42,39 +41,6 @@ export default function SuperGridExample() {
       )}
     />
   );
-
-  // return (
-  //   <SectionGrid
-  //     itemDimension={90}
-  //     // staticDimension={300}
-  //     // fixed
-  //     // spacing={20}
-  //     sections={[
-  //       {
-  //         title: 'Title1',
-  //         data: items.slice(0, 6),
-  //       },
-  //       {
-  //         title: 'Title2',
-  //         data: items.slice(6, 12),
-  //       },
-  //       {
-  //         title: 'Title3',
-  //         data: items.slice(12, 20),
-  //       },
-  //     ]}
-  //     style={styles.gridView}
-  //     renderItem={({ item, section, index }) => (
-  //       <View style={[styles.itemContainer, { backgroundColor: item.code }]}>
-  //         <Text style={styles.itemName}>{item.name}</Text>
-  //         <Text style={styles.itemCode}>{item.code}</Text>
-  //       </View>
-  //     )}
-  //     renderSectionHeader={({ section }) => (
-  //       <Text style={styles.sectionHeader}>{section.title}</Text>
-  //     )}
-  //   />
-  // )
 }
 
 const styles = StyleSheet.create({

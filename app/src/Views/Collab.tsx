@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import Header from '../components/Header';
 import {Picker} from '@react-native-community/picker';
+
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
@@ -59,6 +60,7 @@ export default function CollabScreen() {
         </View>
       </View>
       <CustomTextInput type="default" label="College/University Name" />
+      <CustomTextInput type="email-address" label="E-mail" />
 
       <TouchableOpacity
         style={{
@@ -91,7 +93,12 @@ export default function CollabScreen() {
   );
 }
 
-const CustomTextInput = (props) => {
+interface ICustomTextInputProps {
+  type: string;
+  label: string;
+}
+
+const CustomTextInput = (props: ICustomTextInputProps) => {
   return (
     <View style={(styles.inputCont, styles.margin, {width: '100%'})}>
       <TextInput

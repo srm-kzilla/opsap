@@ -6,9 +6,11 @@ import Upcoming from '../components/Events/Upcoming';
 import OnGoing from '../components/Events/OnGoing';
 import Past from '../components/Events/Past';
 import Header from '../components/Header';
+
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
+// Structure from react-native-tab-view docs
 const FirstRoute = () => (
   <View
     style={[

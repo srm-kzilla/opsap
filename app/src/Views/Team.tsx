@@ -1,22 +1,10 @@
 import React from 'react';
-import {Text, Linking, StyleSheet, View, ScrollView} from 'react-native';
-import SlideShow from '../components/Slideshow';
+import {StyleSheet, View, ScrollView} from 'react-native';
 
-import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import TeamCard from '../components/TeamCard/';
 import Header from '../components/Header';
 
-const shadowOpt = {
-  width: 100,
-  height: 100,
-  color: '#000',
-  border: 2,
-  radius: 3,
-  opacity: 0.2,
-  x: 0,
-  y: 3,
-  style: {marginVertical: 5},
-};
 const TEAM = [
   {
     name: 'Advait Karmakar',
@@ -56,7 +44,7 @@ export default function TeamScreen() {
   return (
     <SafeAreaView style={{flex: 1, alignItems: 'center'}}>
       <Header title="Meet the Team" />
-      <ScrollView>
+      <ScrollView style={{}}>
         <View style={styles.teamCont}>
           {TEAM.map((elm, idx) => {
             return <TeamCard key={idx} {...elm} />;
@@ -69,6 +57,8 @@ export default function TeamScreen() {
 
 const styles = StyleSheet.create({
   teamCont: {
+    backgroundColor: '#efefef',
+    paddingTop: 50,
     alignItems: 'center',
     width: '100%',
     justifyContent: 'space-around',

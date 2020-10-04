@@ -9,9 +9,10 @@ import {
   Image,
 } from 'react-native';
 import SlideShow from '../components/Slideshow';
-import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import LinkCard from '../components/LinkCard';
 import HomeCard from '../components/HomeCard';
+
 const LINKS = [
   {
     title: 'Jazz with OnePlus',
@@ -34,21 +35,6 @@ const LINKS = [
   },
 ];
 
-const HOME_NAV = [
-  {
-    title: 'Meet the Team',
-    nav: 'Team',
-  },
-  {
-    title: 'Gallery',
-    nav: 'Gallery',
-  },
-  {
-    title: 'Events',
-    nav: 'Event',
-  },
-];
-
 const HOME_BANNER = [
   require('../assets/1.jpg'),
   require('../assets/2.jpeg'),
@@ -65,20 +51,7 @@ export default function HomeScreen({navigation}) {
           <Text style={styles.heading}>OnePlus</Text>
           <Text style={styles.subheading}>Student Ambassador Program’20</Text>
         </View>
-        {/* <View style={{height: 100}}>
-          <ScrollView horizontal style={styles.hScroll}>
-            {HOME_NAV.map((elm, idx) => {
-              return (
-                <View key={idx} style={styles.hScrollItem}>
-                  <TouchableOpacity
-                    onPress={() => navigation.navigate(elm.nav)}>
-                    <Text style={styles.navText}>{elm.title}</Text>
-                  </TouchableOpacity>
-                </View>
-              );
-            })}
-          </ScrollView>
-        </View> */}
+
         <View
           style={{width: '100%', paddingHorizontal: 20, alignItems: 'center'}}>
           <HomeCard title="Explore Events" nav="Events">
